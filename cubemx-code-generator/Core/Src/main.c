@@ -95,6 +95,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    // For debug use: LED PC13
+    HAL_Delay(100);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+    HAL_Delay(400);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
