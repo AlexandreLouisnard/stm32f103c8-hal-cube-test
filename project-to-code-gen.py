@@ -6,8 +6,8 @@ import sys
 
 # Update these directories
 # Use -r parameter to invert these two dirs
-SOURCE_DIRS = ["stm32f103c8-hal-cube-test/src", "lala"]
-TARGET_DIRS = ["cubemx-code-generator", "LILI"]
+SOURCE_DIRS = ["stm32f103c8-hal-cube-test/src"]
+TARGET_DIRS = ["cubemx-code-generator"]
 
 # Reverse ?
 if (len(sys.argv) > 1 and sys.argv[1] == '-r'):

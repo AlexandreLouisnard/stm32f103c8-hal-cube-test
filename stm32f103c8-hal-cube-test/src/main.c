@@ -19,7 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -87,7 +86,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART2_UART_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
@@ -98,9 +96,9 @@ int main(void)
   while (1)
   {
     // For debug use: LED PC13
-    HAL_Delay(800);
+    HAL_Delay(500);
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-    HAL_Delay(400);
+    HAL_Delay(500);
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
     /* USER CODE END WHILE */
 
